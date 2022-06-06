@@ -212,6 +212,8 @@
 					object.userData.velocity.y = ( Math.random() - 0.5 ) * 3;
 					object.userData.velocity.z = ( Math.random() - 9 );
 					object.userData.velocity.applyQuaternion( controller.quaternion );
+					
+					object.material = new THREE.MeshLambertMaterial( { color: 0xff0000 } )
 
 					if ( count === room.children.length ) count = 0;
 
